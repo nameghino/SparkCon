@@ -9,6 +9,11 @@
 import Foundation
 import UIKit
 
+let GLB_CORE3_IDENTIFIER = "55ff71065075555338581687"
+let AuthorizationToken = "be564f2a4fd695c2c5c927e3a4c9e2777449547f"
+
+typealias SparkCoreCommandCallback = ((NSData!, NSURLResponse!, NSError!) -> Void)?
+
 enum SparkPin: String {
     case Analog = "A"
     case Digital = "D"
@@ -57,8 +62,21 @@ enum SparkCommand {
     }
 }
 
-let r1on = SparkCommand.SetPin(.Relay, 0, 1)
-let r1off = SparkCommand.SetPin(.Relay, 0, 0)
-
-let coreId = "55ff71065075555338581687"
-let authToken = "be564f2a4fd695c2c5c927e3a4c9e2777449547f"
+class SparkCore {
+    let identifier: String
+    let authToken: String
+    
+    init(identifier: String, authToken: String) {
+        self.identifier = identifier
+        self.authToken = authToken
+    }
+    
+    
+    func sendCommand(command: SparkCommand, callback: SparkCoreCommandCallback) {
+        let session = NSURLSession.sharedSession()
+        let request = command.request(self.authToken, coreId: self.identifier)
+        NSLog("will hit: \(request.URL?.absoluteString)")
+        let task = session.dataTaskWithRequest(request, completionHandler: callback)
+        task.resume()
+    }
+}
