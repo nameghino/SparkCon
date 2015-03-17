@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		353FBF821AB8B53100A544A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353FBF811AB8B53100A544A2 /* AppDelegate.swift */; };
+		353FBF841AB8B53100A544A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353FBF831AB8B53100A544A2 /* ViewController.swift */; };
+		353FBF871AB8B53100A544A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353FBF851AB8B53100A544A2 /* Main.storyboard */; };
+		353FBF891AB8B53100A544A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353FBF881AB8B53100A544A2 /* Images.xcassets */; };
+		353FBF8C1AB8B53100A544A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 353FBF8A1AB8B53100A544A2 /* LaunchScreen.xib */; };
+		353FBF981AB8B53100A544A2 /* SparkConTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353FBF971AB8B53100A544A2 /* SparkConTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		353FBF921AB8B53100A544A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353FBF741AB8B53100A544A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 353FBF7B1AB8B53100A544A2;
+			remoteInfo = SparkCon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		353FBF7C1AB8B53100A544A2 /* SparkCon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkCon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		353FBF801AB8B53100A544A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		353FBF811AB8B53100A544A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		353FBF831AB8B53100A544A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		353FBF861AB8B53100A544A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		353FBF881AB8B53100A544A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		353FBF8B1AB8B53100A544A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		353FBF911AB8B53100A544A2 /* SparkConTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkConTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		353FBF961AB8B53100A544A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		353FBF971AB8B53100A544A2 /* SparkConTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkConTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		353FBF791AB8B53100A544A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353FBF8E1AB8B53100A544A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		353FBF731AB8B53100A544A2 = {
+			isa = PBXGroup;
+			children = (
+				353FBF7E1AB8B53100A544A2 /* SparkCon */,
+				353FBF941AB8B53100A544A2 /* SparkConTests */,
+				353FBF7D1AB8B53100A544A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		353FBF7D1AB8B53100A544A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				353FBF7C1AB8B53100A544A2 /* SparkCon.app */,
+				353FBF911AB8B53100A544A2 /* SparkConTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		353FBF7E1AB8B53100A544A2 /* SparkCon */ = {
+			isa = PBXGroup;
+			children = (
+				353FBF811AB8B53100A544A2 /* AppDelegate.swift */,
+				353FBF831AB8B53100A544A2 /* ViewController.swift */,
+				353FBF851AB8B53100A544A2 /* Main.storyboard */,
+				353FBF881AB8B53100A544A2 /* Images.xcassets */,
+				353FBF8A1AB8B53100A544A2 /* LaunchScreen.xib */,
+				353FBF7F1AB8B53100A544A2 /* Supporting Files */,
+			);
+			path = SparkCon;
+			sourceTree = "<group>";
+		};
+		353FBF7F1AB8B53100A544A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				353FBF801AB8B53100A544A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		353FBF941AB8B53100A544A2 /* SparkConTests */ = {
+			isa = PBXGroup;
+			children = (
+				353FBF971AB8B53100A544A2 /* SparkConTests.swift */,
+				353FBF951AB8B53100A544A2 /* Supporting Files */,
+			);
+			path = SparkConTests;
+			sourceTree = "<group>";
+		};
+		353FBF951AB8B53100A544A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				353FBF961AB8B53100A544A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		353FBF7B1AB8B53100A544A2 /* SparkCon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 353FBF9B1AB8B53100A544A2 /* Build configuration list for PBXNativeTarget "SparkCon" */;
+			buildPhases = (
+				353FBF781AB8B53100A544A2 /* Sources */,
+				353FBF791AB8B53100A544A2 /* Frameworks */,
+				353FBF7A1AB8B53100A544A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SparkCon;
+			productName = SparkCon;
+			productReference = 353FBF7C1AB8B53100A544A2 /* SparkCon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		353FBF901AB8B53100A544A2 /* SparkConTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 353FBF9E1AB8B53100A544A2 /* Build configuration list for PBXNativeTarget "SparkConTests" */;
+			buildPhases = (
+				353FBF8D1AB8B53100A544A2 /* Sources */,
+				353FBF8E1AB8B53100A544A2 /* Frameworks */,
+				353FBF8F1AB8B53100A544A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				353FBF931AB8B53100A544A2 /* PBXTargetDependency */,
+			);
+			name = SparkConTests;
+			productName = SparkConTests;
+			productReference = 353FBF911AB8B53100A544A2 /* SparkConTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		353FBF741AB8B53100A544A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Nicolas Ameghino";
+				TargetAttributes = {
+					353FBF7B1AB8B53100A544A2 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					353FBF901AB8B53100A544A2 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 353FBF7B1AB8B53100A544A2;
+					};
+				};
+			};
+			buildConfigurationList = 353FBF771AB8B53100A544A2 /* Build configuration list for PBXProject "SparkCon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 353FBF731AB8B53100A544A2;
+			productRefGroup = 353FBF7D1AB8B53100A544A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				353FBF7B1AB8B53100A544A2 /* SparkCon */,
+				353FBF901AB8B53100A544A2 /* SparkConTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		353FBF7A1AB8B53100A544A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353FBF871AB8B53100A544A2 /* Main.storyboard in Resources */,
+				353FBF8C1AB8B53100A544A2 /* LaunchScreen.xib in Resources */,
+				353FBF891AB8B53100A544A2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353FBF8F1AB8B53100A544A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		353FBF781AB8B53100A544A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353FBF841AB8B53100A544A2 /* ViewController.swift in Sources */,
+				353FBF821AB8B53100A544A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353FBF8D1AB8B53100A544A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353FBF981AB8B53100A544A2 /* SparkConTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		353FBF931AB8B53100A544A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 353FBF7B1AB8B53100A544A2 /* SparkCon */;
+			targetProxy = 353FBF921AB8B53100A544A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		353FBF851AB8B53100A544A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				353FBF861AB8B53100A544A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		353FBF8A1AB8B53100A544A2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				353FBF8B1AB8B53100A544A2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		353FBF991AB8B53100A544A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		353FBF9A1AB8B53100A544A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		353FBF9C1AB8B53100A544A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SparkCon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		353FBF9D1AB8B53100A544A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SparkCon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		353FBF9F1AB8B53100A544A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SparkConTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SparkCon.app/SparkCon";
+			};
+			name = Debug;
+		};
+		353FBFA01AB8B53100A544A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SparkConTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SparkCon.app/SparkCon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		353FBF771AB8B53100A544A2 /* Build configuration list for PBXProject "SparkCon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353FBF991AB8B53100A544A2 /* Debug */,
+				353FBF9A1AB8B53100A544A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		353FBF9B1AB8B53100A544A2 /* Build configuration list for PBXNativeTarget "SparkCon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353FBF9C1AB8B53100A544A2 /* Debug */,
+				353FBF9D1AB8B53100A544A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		353FBF9E1AB8B53100A544A2 /* Build configuration list for PBXNativeTarget "SparkConTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353FBF9F1AB8B53100A544A2 /* Debug */,
+				353FBFA01AB8B53100A544A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 353FBF741AB8B53100A544A2 /* Project object */;
+}
