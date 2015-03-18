@@ -12,12 +12,18 @@ import UIKit
 let GLB_CORE3_IDENTIFIER = "55ff71065075555338581687"
 let AuthorizationToken = "be564f2a4fd695c2c5c927e3a4c9e2777449547f"
 
-typealias SparkCoreCommandCallback = ((NSData!, NSURLResponse!, NSError!) -> Void)?
+typealias JSONDictionary = [String:AnyObject]
+typealias SparkCoreCommandCallback = ((NSError!, JSONDictionary) -> Void)?
 
 enum SparkPin: String {
     case Analog = "A"
     case Digital = "D"
     case Relay = "R"
+}
+
+enum LogicLevel: Int {
+    case Low = 0
+    case High = 1
 }
 
 enum SparkCommand {
@@ -66,17 +72,59 @@ class SparkCore {
     let identifier: String
     let authToken: String
     
+    var pinState: [LogicLevel] = [.Low, .Low, .Low, .Low, .Low, .Low, .Low, .Low]
+    
     init(identifier: String, authToken: String) {
         self.identifier = identifier
         self.authToken = authToken
     }
     
+    func setPin(pin: Int, level: LogicLevel) {
+        let command = SparkCommand.SetPin(.Digital, pin, level.rawValue)
+        sendCommand(command) {
+            [unowned self] (error, response) -> Void in
+            if error != nil {
+                NSLog("Error: \(error.localizedDescription)")
+                return
+            }
+            
+            NSLog("Response dict:\n\(response)")
+            
+            self.pinState[pin] = level
+        }
+    }
     
-    func sendCommand(command: SparkCommand, callback: SparkCoreCommandCallback) {
+    func togglePin(pin: Int) {
+        switch pinState[pin] {
+        case .Low:
+            self.setPin(pin, level: .High)
+        case .High:
+            self.setPin(pin, level: .Low)
+        }
+    }
+    
+    private func sendCommand(command: SparkCommand, callback: SparkCoreCommandCallback) {
         let session = NSURLSession.sharedSession()
         let request = command.request(self.authToken, coreId: self.identifier)
         NSLog("will hit: \(request.URL?.absoluteString)")
-        let task = session.dataTaskWithRequest(request, completionHandler: callback)
+        let task = session.dataTaskWithRequest(request) {
+            (data, response, error) in
+            if let cb = callback {
+                if error != nil {
+                    cb(error, [:])
+                } else {
+                    var jsonError: NSError?
+                    if let jdict = NSJSONSerialization.JSONObjectWithData(data,
+                        options: NSJSONReadingOptions.allZeros,
+                        error: &jsonError) as? JSONDictionary {
+                        cb(nil, jdict)
+                    } else {
+                        cb(jsonError!, [:])
+                    }
+                    
+                }
+            }
+        }
         task.resume()
     }
 }
