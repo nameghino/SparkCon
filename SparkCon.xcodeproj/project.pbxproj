@@ -14,6 +14,13 @@
 		353FBF8C1AB8B53100A544A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 353FBF8A1AB8B53100A544A2 /* LaunchScreen.xib */; };
 		353FBF981AB8B53100A544A2 /* SparkConTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353FBF971AB8B53100A544A2 /* SparkConTests.swift */; };
 		353FBFA21AB8B54500A544A2 /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353FBFA11AB8B54500A544A2 /* Spark.swift */; };
+		353FBFAC1AB8BE5500A544A2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353FBFAB1AB8BE5500A544A2 /* InterfaceController.swift */; };
+		353FBFAE1AB8BE5500A544A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353FBFAD1AB8BE5500A544A2 /* Images.xcassets */; };
+		353FBFB21AB8BE5500A544A2 /* SparkCon WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 353FBFB11AB8BE5500A544A2 /* SparkCon WatchKit App.app */; };
+		353FBFBA1AB8BE5500A544A2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353FBFB81AB8BE5500A544A2 /* Interface.storyboard */; };
+		353FBFBC1AB8BE5500A544A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353FBFBB1AB8BE5500A544A2 /* Images.xcassets */; };
+		353FBFBF1AB8BE5500A544A2 /* SparkCon WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 353FBFA71AB8BE5500A544A2 /* SparkCon WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		353FBFC71AB8BE6D00A544A2 /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353FBFA11AB8B54500A544A2 /* Spark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +31,35 @@
 			remoteGlobalIDString = 353FBF7B1AB8B53100A544A2;
 			remoteInfo = SparkCon;
 		};
+		353FBFB31AB8BE5500A544A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353FBF741AB8B53100A544A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 353FBFB01AB8BE5500A544A2;
+			remoteInfo = "SparkCon WatchKit App";
+		};
+		353FBFBD1AB8BE5500A544A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353FBF741AB8B53100A544A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 353FBFA61AB8BE5500A544A2;
+			remoteInfo = "SparkCon WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		353FBFC61AB8BE5500A544A2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				353FBFBF1AB8BE5500A544A2 /* SparkCon WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		353FBF7C1AB8B53100A544A2 /* SparkCon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkCon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +73,14 @@
 		353FBF961AB8B53100A544A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		353FBF971AB8B53100A544A2 /* SparkConTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkConTests.swift; sourceTree = "<group>"; };
 		353FBFA11AB8B54500A544A2 /* Spark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spark.swift; sourceTree = "<group>"; };
+		353FBFA71AB8BE5500A544A2 /* SparkCon WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SparkCon WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		353FBFAA1AB8BE5500A544A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		353FBFAB1AB8BE5500A544A2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		353FBFAD1AB8BE5500A544A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		353FBFB11AB8BE5500A544A2 /* SparkCon WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SparkCon WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		353FBFB71AB8BE5500A544A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		353FBFB91AB8BE5500A544A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		353FBFBB1AB8BE5500A544A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		353FBFA41AB8BE5500A544A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +113,8 @@
 			children = (
 				353FBF7E1AB8B53100A544A2 /* SparkCon */,
 				353FBF941AB8B53100A544A2 /* SparkConTests */,
+				353FBFA81AB8BE5500A544A2 /* SparkCon WatchKit Extension */,
+				353FBFB51AB8BE5500A544A2 /* SparkCon WatchKit App */,
 				353FBF7D1AB8B53100A544A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +124,8 @@
 			children = (
 				353FBF7C1AB8B53100A544A2 /* SparkCon.app */,
 				353FBF911AB8B53100A544A2 /* SparkConTests.xctest */,
+				353FBFA71AB8BE5500A544A2 /* SparkCon WatchKit Extension.appex */,
+				353FBFB11AB8BE5500A544A2 /* SparkCon WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +169,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		353FBFA81AB8BE5500A544A2 /* SparkCon WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				353FBFAB1AB8BE5500A544A2 /* InterfaceController.swift */,
+				353FBFAD1AB8BE5500A544A2 /* Images.xcassets */,
+				353FBFA91AB8BE5500A544A2 /* Supporting Files */,
+			);
+			path = "SparkCon WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		353FBFA91AB8BE5500A544A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				353FBFAA1AB8BE5500A544A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		353FBFB51AB8BE5500A544A2 /* SparkCon WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				353FBFB81AB8BE5500A544A2 /* Interface.storyboard */,
+				353FBFBB1AB8BE5500A544A2 /* Images.xcassets */,
+				353FBFB61AB8BE5500A544A2 /* Supporting Files */,
+			);
+			path = "SparkCon WatchKit App";
+			sourceTree = "<group>";
+		};
+		353FBFB61AB8BE5500A544A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				353FBFB71AB8BE5500A544A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +215,12 @@
 				353FBF781AB8B53100A544A2 /* Sources */,
 				353FBF791AB8B53100A544A2 /* Frameworks */,
 				353FBF7A1AB8B53100A544A2 /* Resources */,
+				353FBFC61AB8BE5500A544A2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				353FBFBE1AB8BE5500A544A2 /* PBXTargetDependency */,
 			);
 			name = SparkCon;
 			productName = SparkCon;
@@ -153,6 +245,39 @@
 			productReference = 353FBF911AB8B53100A544A2 /* SparkConTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		353FBFA61AB8BE5500A544A2 /* SparkCon WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 353FBFC31AB8BE5500A544A2 /* Build configuration list for PBXNativeTarget "SparkCon WatchKit Extension" */;
+			buildPhases = (
+				353FBFA31AB8BE5500A544A2 /* Sources */,
+				353FBFA41AB8BE5500A544A2 /* Frameworks */,
+				353FBFA51AB8BE5500A544A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				353FBFB41AB8BE5500A544A2 /* PBXTargetDependency */,
+			);
+			name = "SparkCon WatchKit Extension";
+			productName = "SparkCon WatchKit Extension";
+			productReference = 353FBFA71AB8BE5500A544A2 /* SparkCon WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		353FBFB01AB8BE5500A544A2 /* SparkCon WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 353FBFC01AB8BE5500A544A2 /* Build configuration list for PBXNativeTarget "SparkCon WatchKit App" */;
+			buildPhases = (
+				353FBFAF1AB8BE5500A544A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SparkCon WatchKit App";
+			productName = "SparkCon WatchKit App";
+			productReference = 353FBFB11AB8BE5500A544A2 /* SparkCon WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +293,12 @@
 					353FBF901AB8B53100A544A2 = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = 353FBF7B1AB8B53100A544A2;
+					};
+					353FBFA61AB8BE5500A544A2 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					353FBFB01AB8BE5500A544A2 = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
@@ -186,6 +317,8 @@
 			targets = (
 				353FBF7B1AB8B53100A544A2 /* SparkCon */,
 				353FBF901AB8B53100A544A2 /* SparkConTests */,
+				353FBFA61AB8BE5500A544A2 /* SparkCon WatchKit Extension */,
+				353FBFB01AB8BE5500A544A2 /* SparkCon WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +338,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353FBFA51AB8BE5500A544A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353FBFAE1AB8BE5500A544A2 /* Images.xcassets in Resources */,
+				353FBFB21AB8BE5500A544A2 /* SparkCon WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353FBFAF1AB8BE5500A544A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353FBFBA1AB8BE5500A544A2 /* Interface.storyboard in Resources */,
+				353FBFBC1AB8BE5500A544A2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +380,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		353FBFA31AB8BE5500A544A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353FBFAC1AB8BE5500A544A2 /* InterfaceController.swift in Sources */,
+				353FBFC71AB8BE6D00A544A2 /* Spark.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +396,16 @@
 			isa = PBXTargetDependency;
 			target = 353FBF7B1AB8B53100A544A2 /* SparkCon */;
 			targetProxy = 353FBF921AB8B53100A544A2 /* PBXContainerItemProxy */;
+		};
+		353FBFB41AB8BE5500A544A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 353FBFB01AB8BE5500A544A2 /* SparkCon WatchKit App */;
+			targetProxy = 353FBFB31AB8BE5500A544A2 /* PBXContainerItemProxy */;
+		};
+		353FBFBE1AB8BE5500A544A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 353FBFA61AB8BE5500A544A2 /* SparkCon WatchKit Extension */;
+			targetProxy = 353FBFBD1AB8BE5500A544A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -254,6 +424,14 @@
 				353FBF8B1AB8B53100A544A2 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		353FBFB81AB8BE5500A544A2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				353FBFB91AB8BE5500A544A2 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -344,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SparkCon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SparkCon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,6 +574,60 @@
 			};
 			name = Release;
 		};
+		353FBFC11AB8BE5500A544A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = SparkCon_WatchKit_Extension;
+				INFOPLIST_FILE = "SparkCon WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		353FBFC21AB8BE5500A544A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = SparkCon_WatchKit_Extension;
+				INFOPLIST_FILE = "SparkCon WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		353FBFC41AB8BE5500A544A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SparkCon WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		353FBFC51AB8BE5500A544A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SparkCon WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -419,6 +653,22 @@
 			buildConfigurations = (
 				353FBF9F1AB8B53100A544A2 /* Debug */,
 				353FBFA01AB8B53100A544A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		353FBFC01AB8BE5500A544A2 /* Build configuration list for PBXNativeTarget "SparkCon WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353FBFC11AB8BE5500A544A2 /* Debug */,
+				353FBFC21AB8BE5500A544A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		353FBFC31AB8BE5500A544A2 /* Build configuration list for PBXNativeTarget "SparkCon WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353FBFC41AB8BE5500A544A2 /* Debug */,
+				353FBFC51AB8BE5500A544A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
