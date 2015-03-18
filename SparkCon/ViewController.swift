@@ -23,16 +23,7 @@ class ViewController: UIViewController {
     }
     
     func hitIt(sender: UIControl) {
-        let session = NSURLSession.sharedSession()
-        
-        let command = SparkCommand.SetPin(.Relay, 0, (turnOn ? 1 : 0))
-        turnOn = !turnOn
-        
-        core.sendCommand(command) {
-            (data, response, error) in
-            return
-        }
-        
+        core.togglePin(0)
     }
     
     override func viewDidAppear(animated: Bool) {
