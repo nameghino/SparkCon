@@ -48,7 +48,16 @@ class InterfaceController: WKInterfaceController {
             break
         }
         
-        core.setPin(0, level: .High)
+        let dict : [NSObject: AnyObject] = ["pin": pin, "coreId": core.identifier, "token": core.authToken]
+        
+        WKInterfaceController.openParentApplication(dict) {
+            (reply, error) -> Void in
+            if error != nil {
+                NSLog("error: \(error.localizedDescription)")
+            }
+            NSLog("reply\n\(reply)")
+        }
+        NSLog("wiii")
     }
     
 }

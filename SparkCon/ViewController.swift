@@ -23,7 +23,10 @@ class ViewController: UIViewController {
     }
     
     func hitIt(sender: UIControl) {
-        core.togglePin(0)
+        core.togglePin(0) {
+            [unowned self] (_, _) in
+            NSLog("\(self.core.pinState.map({ $0.rawValue }))")
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
