@@ -68,7 +68,7 @@ enum SparkCommand {
     }
 }
 
-class SparkCore {
+class SparkCore: NSObject, NSCoding {
     let identifier: String
     let authToken: String
     
@@ -79,27 +79,52 @@ class SparkCore {
         self.authToken = authToken
     }
     
+    required init(coder aDecoder: NSCoder) {
+        self.identifier = aDecoder.decodeObjectForKey("identifier") as! String
+        self.authToken = aDecoder.decodeObjectForKey("authToken") as! String
+        let pins = aDecoder.decodeObjectForKey("pinState") as! [Int]
+        self.pinState = pins.map({ LogicLevel(rawValue: $0)! })
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(self.identifier, forKey: "identifier")
+        aCoder.encodeObject(self.authToken, forKey: "authToken")
+        aCoder.encodeObject(self.pinState.map({ $0.rawValue }), forKey: "pinState")
+    }
+    
     func setPin(pin: Int, level: LogicLevel) {
+        self.setPin(pin, level: level, callback: nil)
+    }
+    
+    func setPin(pin: Int, level: LogicLevel, callback: SparkCoreCommandCallback) {
         let command = SparkCommand.SetPin(.Digital, pin, level.rawValue)
         sendCommand(command) {
             [unowned self] (error, response) -> Void in
+            
+            
             if error != nil {
                 NSLog("Error: \(error.localizedDescription)")
+                if let cb = callback { cb(error, [:]) }
                 return
             }
             
             NSLog("Response dict:\n\(response)")
-            
             self.pinState[pin] = level
+            
+            if let cb = callback { cb(nil, response) }
         }
     }
     
     func togglePin(pin: Int) {
+        self.togglePin(pin, callback: nil)
+    }
+    
+    func togglePin(pin: Int, callback: SparkCoreCommandCallback) {
         switch pinState[pin] {
         case .Low:
-            self.setPin(pin, level: .High)
+            self.setPin(pin, level: .High, callback: callback)
         case .High:
-            self.setPin(pin, level: .Low)
+            self.setPin(pin, level: .Low, callback: callback)
         }
     }
     
@@ -117,7 +142,7 @@ class SparkCore {
                     if let jdict = NSJSONSerialization.JSONObjectWithData(data,
                         options: NSJSONReadingOptions.allZeros,
                         error: &jsonError) as? JSONDictionary {
-                        cb(nil, jdict)
+                            cb(nil, jdict)
                     } else {
                         cb(jsonError!, [:])
                     }
